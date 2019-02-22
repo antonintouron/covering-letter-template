@@ -1,0 +1,45 @@
+{% extends 'pdf.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row justify-content-start">
+            <div>
+                <p>
+                    {{ pdf.firstName }} {{ pdf.lastName }} <br>
+                    {{ pdf.address }} <br>
+                    {{ pdf.postalCode }} {{ pdf.city }} <br>
+                    {{ pdf.mobilePhone }} - {{ pdf.email }}
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-end text-right">
+            <div>
+                <p>
+                    {{ pdf.recipientName }} <br>
+                    {{ pdf.recipientAddress }} <br>
+                    {{ pdf.recipientPostalCode }} {{ pdf.recipientCity }}
+                </p><br>
+                <p>{{ pdf.city }}, le {{ pdf.createdAt | date("d/m/Y") }}</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row justify-content-start">
+            <div>
+                <p>Objet : {{ pdf.object }}</p>
+            </div>
+        </div>
+        <div class="row justify-content-start text-justify">
+            <div>
+                <p>{{ pdf.message | raw }}</p>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-start">
+            <div>
+                <p>{{ pdf.firstName }} {{ pdf.lastName }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
