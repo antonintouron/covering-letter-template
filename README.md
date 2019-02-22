@@ -20,10 +20,3 @@ vos informations et l'application pourra créer votre lettre de motivation.</p>
 
 <hr>
 
-<h3>Nouveautés :<h3>
-<ul>
-    <li>V1.0 sortie le 22/02/2019.</li>
-    <li>Prochaine mise à jour à venir.</li>
-    <li>Mise en ligne mi-mars.</li>
-</ul>
-
