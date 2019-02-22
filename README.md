@@ -1,7 +1,8 @@
 <h1>Covering-Letter-Template</h1>
 
-<p>Cette application web vous permet de générer des lettres de motivation
-afin de vous faciliter le travail.</p>
+<p>Cette application web vous permet de générer un template
+de lettres de motivation afin de vous faciliter le travail. Entrez 
+vos informations et l'application pourra créer votre lettre de motivation.</p>
 
 <h3>Installer l'application : </h3>
 <ul>
