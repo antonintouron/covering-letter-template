@@ -46,22 +46,19 @@ class CoverLetterController extends AbstractController
      */
     public function pdf($token, CoverLetterTemplate $pdf)
     {
-        // On crée une  instance pour définir les options de notre fichier pdf
         $options = new Options();
-        // On crée une instance de dompdf avec  les options définies
+
         $dompdf = new Dompdf($options);
-        // On demande à Symfony de générer  le code html  correspondant à
-        // notre template, et on stocke ce code dans une variable
+
         $html = $this->renderView(
             'template/pdfTemplate.html.twig',
             array('pdf' => $pdf)
         );
-        // On envoie le code html  à notre instance de dompdf
-        $dompdf->loadHtml($html);
-        // On demande à dompdf de générer le  pdf
-        $dompdf->render();
-        // On renvoie  le flux du fichier pdf dans une  Response pour l'utilisateur
-        return new Response($dompdf->stream());
 
+        $dompdf->loadHtml($html);
+
+        $dompdf->render();
+
+        return new Response($dompdf->stream());
     }
 }
