@@ -62,6 +62,6 @@ class CoverLetterController extends AbstractController
         $dompdf->render();
         // On renvoie  le flux du fichier pdf dans une  Response pour l'utilisateur
         return new Response($dompdf->stream());
-        
+
     }
 }
