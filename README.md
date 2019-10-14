@@ -1,15 +1,15 @@
 <h1>Covering-Letter-Template</h1>
 
-<p>Cette application web vous permet de générer un template
-de lettres de motivation afin de vous faciliter le travail. Entrez 
-vos informations et l'application pourra créer votre lettre de motivation.</p>
+<p>This web application allows you to generate a template
+cover letters to make your work easier. Come in
+your information and the application can create your cover letter.</p>
 
-<h3>Installer l'application : </h3>
+<h3>Install : </h3>
 <ul>
-    <li>Il faut cloner l'application.</li>
-    <li>Puis changer la configuration du .env pour votre base de données.</li>
-    <li>Ensuite migrer la table.</li>
-    <li>Et lancer le serveur</li>
+    <li>Clone app</li>
+    <li>Modifify .env with your database config</li>
+    <li>Run migration (php bin/console doctrine:migrations:migrate)</li>
+    <li>Run server (php bin/console server:start)</li>
 </ul>
 
 <h3>Versions :</h3>
